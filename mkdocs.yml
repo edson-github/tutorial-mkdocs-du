@@ -1,0 +1,49 @@
+site_name: Live de Python
+
+theme:
+  name: material
+  palette:
+  - scheme: default
+    primary: purple
+    toggle:
+      icon: material/weather-night
+      name: dark
+  - scheme: slate
+    primary: deep-purple
+    toggle:
+        icon: material/weather-sunny
+        name: light
+
+markdown_extensions:
+  - pymdownx.emoji
+  - pymdownx.tilde
+  - pymdownx.tasklist
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tabbed
+  - pymdownx.magiclink
+  - pymdownx.highlight
+  - pymdownx.arithmatex
+  - pymdownx.caret
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      linenums: true
+      guess_lang: false
+      css_class: highlight
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
+
+ 
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.5.1/mermaid.min.css
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.5.1/mermaid.min.js
+
+
+
